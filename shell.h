@@ -23,20 +23,24 @@
 #include <fcntl.h>    // for open, dup2, close
 #include <ctype.h>    // for isspace
 
-// maximum length of a command input
-#define MAX_COMMAND_LENGTH 1024
-// maximum number of arguments for a command
-#define MAX_ARGS 64
-// maximum number of commands to store in history
-#define MAX_HISTORY_SIZE 200
-// name of the history file, stored in the user's home directory
-#define HISTORY_FILE_NAME "/.bropesh_history"
 
 
 
 
 // SETTINGS
 // global variables for shell state
+// maximum length of a command input
+#define MAX_COMMAND_LENGTH 1024
+// maximum number of arguments for a command
+#define MAX_ARGS 64
+// maximum number of commands to store in history
+#define MAX_HISTORY_SIZE 20
+// name of the history file, stored in the user's home directory
+#define HISTORY_FILE_NAME "/.bropesh_history"
+
+
+
+
 // pointer to the user's home directory path
 extern char *home_dir;
 // pointer to the previous working directory path, used for 'cd -'

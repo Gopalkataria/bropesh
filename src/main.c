@@ -2,6 +2,7 @@
 // main entry point for the os mini-project shell
 
 #include "shell.h"
+#include <stdio.h>
 
 // global variables
 char *home_dir = NULL;
@@ -51,6 +52,21 @@ int main() {
 
     // setup signal handlers
     setup_signal_handlers();
+    printf("  █████               2023112006 OSA Project              █████        \n");
+    printf("  ▒▒███                                                   ▒▒███         \n");
+    printf("   ▒███████  ████████   ██████  ████████   ██████   █████  ▒███████     \n");
+    printf("   ▒███▒▒███▒▒███▒▒███ ███▒▒███▒▒███▒▒███ ███▒▒███ ███▒▒   ▒███▒▒███    \n");
+    printf("   ▒███ ▒███ ▒███ ▒▒▒ ▒███ ▒███ ▒███ ▒███▒███████ ▒▒█████  ▒███ ▒███    \n");
+    printf("   ▒███ ▒███ ▒███     ▒███ ▒███ ▒███ ▒███▒███▒▒▒   ▒▒▒▒███ ▒███ ▒███    \n");
+    printf("   ████████  █████    ▒▒██████  ▒███████ ▒▒██████  ██████  ████ █████   \n");
+    printf("  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒      ▒▒▒▒▒▒   ▒███▒▒▒   ▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒ ▒▒▒▒▒    \n");
+    printf("         \\    /\\                ▒███  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n");
+    printf("          )  ( ')               ████                                   \n");
+    printf("         (  /  )                ▒▒▒▒  Crafted with ♡ by Gopal Kataria \n");
+    printf("          \\(__)|      \n\n") ;
+
+
+
 
     while (1) {
         display_prompt();

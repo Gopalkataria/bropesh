@@ -3,6 +3,7 @@
 
 #include "shell.h"
 #include <limits.h> // for path_max
+#include <stdio.h>
 
 int execute_builtin_command(char **args) {
     if (strcmp(args[0], "exit") == 0) {
@@ -51,6 +52,26 @@ void builtin_pwd() {
     } else {
         perror("bropesh: pwd failed");
     }
+}
+
+// displays help information
+void builtin_help() {
+    printf("\n--- Bropesh Shell Help ---\n");
+    printf(" built with <3 by Gopal Kataria 2023112006 \n");
+    printf("Type program names and arguments, and hit enter.\n");
+    printf("The following commands are built-in:\n");
+    printf("  cd [dir]    : Change directory (supports ~, .., -)\n");
+    printf("  pwd         : Print current working directory\n");
+    printf("  echo [arg]  : Display text\n");
+    printf("  history     : Display last 20 commands\n");
+    printf("  help        : Display this information\n");
+    printf("  exit        : Exit the shell\n");
+    printf("\n");
+    printf("Supported Features:\n");
+    printf("  - External commands (e.g., ls, grep)\n");
+    printf("  - I/O Redirection (< input_file, > output_file)\n");
+    printf("  - Background execution (end command with &)\n");
+    printf("--------------------------\n\n");
 }
 
 int builtin_cd(char **args) {
