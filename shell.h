@@ -75,6 +75,8 @@ void builtin_echo(char **args);
 void builtin_pwd();
 // implements the 'cd' command
 int builtin_cd(char **args);
+// implements the HELP command
+int builtin_help();
 // implements the 'history' command
 void builtin_history();
 // handles ctrl+d (end of file) signal, performs cleanup and exits

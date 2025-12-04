@@ -27,6 +27,8 @@ int execute_builtin_command(char **args) {
         return 1;
     } else if (strcmp(args[0], "cd") == 0) {
         return builtin_cd(args);
+     } else if (strcmp(args[0], "help") == 0) {
+        return builtin_help();
     } else if (strcmp(args[0], "history") == 0) {
         if (args[1] != NULL) {
             fprintf(stderr, "bropesh: history: too many arguments\n");
@@ -55,7 +57,7 @@ void builtin_pwd() {
 }
 
 // displays help information
-void builtin_help() {
+int builtin_help() {
     printf("\n--- Bropesh Shell Help ---\n");
     printf(" built with <3 by Gopal Kataria 2023112006 \n");
     printf("Type program names and arguments, and hit enter.\n");
@@ -72,6 +74,7 @@ void builtin_help() {
     printf("  - I/O Redirection (< input_file, > output_file)\n");
     printf("  - Background execution (end command with &)\n");
     printf("--------------------------\n\n");
+    return 0 ; 
 }
 
 int builtin_cd(char **args) {

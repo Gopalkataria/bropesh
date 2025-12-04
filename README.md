@@ -1,15 +1,4 @@
 
-# Operating Systems Mini-Project: Bropesh Shell
-
-**Name:** Gopal Kataria  
-**Roll Number:** 2023112006  
-**Course:** Algorithms and Operating Systems 
-
----
-
-##  Introduction
-
-**Bropesh** is a custom, interactive command-line interpreter (shell) written in C. It is designed to mimic the functionality of standard shells like Bash or Zsh. It supports built-in commands, external process execution, input/output redirection, background processing, and persistent command history.
 
 ```
   █████               2023112006 OSA Project              █████        
@@ -27,6 +16,17 @@
                      
 ```
 
+# Operating Systems Mini-Project: Bropesh Shell
+
+**Name:** Gopal Kataria  
+**Roll Number:** 2023112006  
+**Course:** Algorithms and Operating Systems 
+
+---
+
+##  Introduction
+
+**Bropesh** is a custom, interactive command-line interpreter (shell) written in C. It is designed to mimic the functionality of standard shells like Bash or Zsh. It supports built-in commands, external process execution, input/output redirection, background processing, and persistent command history.
 ---
 
 ## Project Structure

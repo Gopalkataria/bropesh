@@ -73,6 +73,8 @@ int execute_builtin_command(char **args);
 void builtin_echo(char **args);
 // implements the 'pwd' command
 void builtin_pwd();
+// implement the Help command 
+int  builtin_help();
 // implements the 'cd' command
 int builtin_cd(char **args);
 // implements the 'history' command
